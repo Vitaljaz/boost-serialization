@@ -1,0 +1,237 @@
+﻿  boost-serialization.cpp
+  Unknown compiler version - please run the configure tests and report the results
+c:\program files\boost_1_65_0\boost\mpl\print.hpp(55): error C4308: negative integral constant converted to unsigned type
+  c:\program files\boost_1_65_0\boost\serialization\static_warning.hpp(88): note: see reference to class template instantiation 'boost::mpl::print<boost::serialization::BOOST_SERIALIZATION_STATIC_WARNING_LINE<148>>' being compiled
+  c:\program files\boost_1_65_0\boost\archive\detail\check.hpp(148): note: see reference to class template instantiation 'boost::serialization::static_warning_test<false,148>' being compiled
+  c:\program files\boost_1_65_0\boost\archive\detail\oserializer.hpp(456): note: see reference to function template instantiation 'void boost::archive::detail::check_pointer_tracking<T>(void)' being compiled
+          with
+          [
+              T=int
+          ]
+  c:\program files\boost_1_65_0\boost\archive\detail\oserializer.hpp(475): note: see reference to function template instantiation 'void boost::archive::detail::save_pointer_type<Archive>::save<int>(Archive &,const T &)' being compiled
+          with
+          [
+              Archive=boost::archive::xml_oarchive,
+              T=int
+          ]
+  c:\program files\boost_1_65_0\boost\archive\detail\oserializer.hpp(475): note: see reference to function template instantiation 'void boost::archive::detail::save_pointer_type<Archive>::save<int>(Archive &,const T &)' being compiled
+          with
+          [
+              Archive=boost::archive::xml_oarchive,
+              T=int
+          ]
+  c:\program files\boost_1_65_0\boost\archive\detail\oserializer.hpp(534): note: see reference to function template instantiation 'void boost::archive::detail::save_pointer_type<Archive>::invoke<const T>(Archive &,const TPtr)' being compiled
+          with
+          [
+              Archive=boost::archive::xml_oarchive,
+              T=int *,
+              TPtr=int *
+          ]
+  c:\program files\boost_1_65_0\boost\archive\detail\oserializer.hpp(534): note: see reference to function template instantiation 'void boost::archive::detail::save_pointer_type<Archive>::invoke<const T>(Archive &,const TPtr)' being compiled
+          with
+          [
+              Archive=boost::archive::xml_oarchive,
+              T=int *,
+              TPtr=int *
+          ]
+  c:\program files\boost_1_65_0\boost\archive\detail\common_oarchive.hpp(70): note: see reference to function template instantiation 'void boost::archive::save<Archive,T>(Archive &,T &)' being compiled
+          with
+          [
+              Archive=boost::archive::xml_oarchive,
+              T=int *
+          ]
+  c:\program files\boost_1_65_0\boost\archive\basic_xml_oarchive.hpp(100): note: see reference to function template instantiation 'void boost::archive::detail::common_oarchive<Archive>::save_override<const T>(T &)' being compiled
+          with
+          [
+              Archive=boost::archive::xml_oarchive,
+              T=int *
+          ]
+  c:\program files\boost_1_65_0\boost\archive\basic_xml_oarchive.hpp(100): note: see reference to function template instantiation 'void boost::archive::detail::common_oarchive<Archive>::save_override<const T>(T &)' being compiled
+          with
+          [
+              Archive=boost::archive::xml_oarchive,
+              T=int *
+          ]
+  c:\program files\boost_1_65_0\boost\archive\detail\interface_oarchive.hpp(70): note: see reference to function template instantiation 'void boost::archive::basic_xml_oarchive<Archive>::save_override<int*>(const boost::serialization::nvp<int *> &)' being compiled
+          with
+          [
+              Archive=boost::archive::xml_oarchive
+          ]
+  c:\program files\boost_1_65_0\boost\archive\detail\interface_oarchive.hpp(70): note: see reference to function template instantiation 'void boost::archive::basic_xml_oarchive<Archive>::save_override<int*>(const boost::serialization::nvp<int *> &)' being compiled
+          with
+          [
+              Archive=boost::archive::xml_oarchive
+          ]
+  c:\program files\boost_1_65_0\boost\archive\detail\interface_oarchive.hpp(77): note: see reference to function template instantiation 'Archive &boost::archive::detail::interface_oarchive<Archive>::operator <<<T>(const T &)' being compiled
+          with
+          [
+              Archive=boost::archive::xml_oarchive,
+              T=boost::serialization::nvp<int *>
+          ]
+  c:\program files\boost_1_65_0\boost\archive\detail\interface_oarchive.hpp(77): note: see reference to function template instantiation 'Archive &boost::archive::detail::interface_oarchive<Archive>::operator <<<T>(const T &)' being compiled
+          with
+          [
+              Archive=boost::archive::xml_oarchive,
+              T=boost::serialization::nvp<int *>
+          ]
+  c:\github\boost-serialization\boost-serialization\policeman.h(31): note: see reference to function template instantiation 'Archive &boost::archive::detail::interface_oarchive<Archive>::operator &<boost::serialization::nvp<int *>>(const T &)' being compiled
+          with
+          [
+              Archive=boost::archive::xml_oarchive,
+              T=boost::serialization::nvp<int *>
+          ]
+  c:\github\boost-serialization\boost-serialization\policeman.h(31): note: see reference to function template instantiation 'Archive &boost::archive::detail::interface_oarchive<Archive>::operator &<boost::serialization::nvp<int *>>(const T &)' being compiled
+          with
+          [
+              Archive=boost::archive::xml_oarchive,
+              T=boost::serialization::nvp<int *>
+          ]
+  c:\program files\boost_1_65_0\boost\serialization\access.hpp(116): note: see reference to function template instantiation 'void Policeman::serialize<Archive>(Archive &,const unsigned int)' being compiled
+          with
+          [
+              Archive=boost::archive::xml_oarchive
+          ]
+  c:\program files\boost_1_65_0\boost\serialization\serialization.hpp(68): note: see reference to function template instantiation 'void boost::serialization::access::serialize<Archive,T>(Archive &,T &,const unsigned int)' being compiled
+          with
+          [
+              Archive=boost::archive::xml_oarchive,
+              T=Policeman
+          ]
+  c:\program files\boost_1_65_0\boost\serialization\serialization.hpp(126): note: see reference to function template instantiation 'void boost::serialization::serialize<Archive,T>(Archive &,T &,const unsigned int)' being compiled
+          with
+          [
+              Archive=boost::archive::xml_oarchive,
+              T=Policeman
+          ]
+  c:\program files\boost_1_65_0\boost\archive\detail\oserializer.hpp(154): note: see reference to function template instantiation 'void boost::serialization::serialize_adl<Archive,T>(Archive &,T &,const unsigned int)' being compiled
+          with
+          [
+              Archive=boost::archive::xml_oarchive,
+              T=Policeman
+          ]
+  c:\program files\boost_1_65_0\boost\archive\detail\oserializer.hpp(146): note: while compiling class template member function 'void boost::archive::detail::oserializer<Archive,T>::save_object_data(boost::archive::detail::basic_oarchive &,const void *) const'
+          with
+          [
+              Archive=boost::archive::xml_oarchive,
+              T=Policeman
+          ]
+  c:\program files\boost_1_65_0\boost\archive\detail\oserializer.hpp(171): note: see reference to class template instantiation 'boost::archive::detail::oserializer<Archive,T>' being compiled
+          with
+          [
+              Archive=boost::archive::xml_oarchive,
+              T=Policeman
+          ]
+  c:\program files\boost_1_65_0\boost\archive\detail\oserializer.hpp(168): note: while compiling class template member function 'const boost::archive::detail::basic_oserializer &boost::archive::detail::pointer_oserializer<Archive,Serializable>::get_basic_serializer(void) const'
+          with
+          [
+              Archive=boost::archive::xml_oarchive,
+              Serializable=Policeman
+          ]
+  c:\program files\boost_1_65_0\boost\serialization\export.hpp(73): note: see reference to class template instantiation 'boost::archive::detail::pointer_oserializer<Archive,Serializable>' being compiled
+          with
+          [
+              Archive=boost::archive::xml_oarchive,
+              Serializable=Policeman
+          ]
+  c:\program files\boost_1_65_0\boost\serialization\export.hpp(70): note: while compiling class template member function 'const boost::archive::detail::basic_pointer_oserializer &boost::archive::detail::export_impl<Archive,Serializable>::enable_save(boost::mpl::true_)'
+          with
+          [
+              Archive=boost::archive::xml_oarchive,
+              Serializable=Policeman
+          ]
+  c:\program files\boost_1_65_0\boost\serialization\export.hpp(101): note: see reference to function template instantiation 'const boost::archive::detail::basic_pointer_oserializer &boost::archive::detail::export_impl<Archive,Serializable>::enable_save(boost::mpl::true_)' being compiled
+          with
+          [
+              Archive=boost::archive::xml_oarchive,
+              Serializable=Policeman
+          ]
+  c:\program files\boost_1_65_0\boost\serialization\export.hpp(101): note: see reference to class template instantiation 'boost::archive::detail::export_impl<Archive,Serializable>' being compiled
+          with
+          [
+              Archive=boost::archive::xml_oarchive,
+              Serializable=Policeman
+          ]
+  c:\program files\boost_1_65_0\boost\serialization\export.hpp(100): note: while compiling class template member function 'void boost::archive::detail::ptr_serialization_support<Archive,Serializable>::instantiate(void)'
+          with
+          [
+              Archive=boost::archive::xml_oarchive,
+              Serializable=Policeman
+          ]
+  c:\program files\boost_1_65_0\boost\archive\detail\register_archive.hpp(27): note: see reference to class template instantiation 'boost::archive::detail::ptr_serialization_support<Archive,Serializable>' being compiled
+          with
+          [
+              Archive=boost::archive::xml_oarchive,
+              Serializable=Policeman
+          ]
+  c:\program files\boost_1_65_0\boost\serialization\export.hpp(123): note: see reference to class template instantiation 'boost::archive::detail::_ptr_serialization_support<boost::archive::xml_oarchive,T>' being compiled
+          with
+          [
+              T=Policeman
+          ]
+  c:\program files\boost_1_65_0\boost\archive\xml_oarchive.hpp(131): note: see reference to function template instantiation '_ptr_serialization_support<boost::archive::xml_oarchive,Serializable>::type boost::archive::detail::instantiate_ptr_serialization(Serializable *,boost::archive::xml_oarchive *,boost::archive::detail::adl_tag)' being compiled
+  c:\program files\boost_1_65_0\boost\serialization\export.hpp(119): note: while compiling class template member function 'void boost::archive::detail::extra_detail::guid_initializer<Policeman>::export_guid(boost::mpl::false_) const'
+  c:\program files\boost_1_65_0\boost\serialization\export.hpp(133): note: see reference to function template instantiation 'void boost::archive::detail::extra_detail::guid_initializer<Policeman>::export_guid(boost::mpl::false_) const' being compiled
+  c:\github\boost-serialization\boost-serialization\class_master.h(7): note: see reference to class template instantiation 'boost::archive::detail::extra_detail::guid_initializer<Policeman>' being compiled
+c:\program files\boost_1_65_0\boost\serialization\access.hpp(116): error C2228: left of '.serialize' must have class/struct/union
+  c:\program files\boost_1_65_0\boost\serialization\access.hpp(116): note: type is 'T'
+          with
+          [
+              T=int
+          ]
+  c:\program files\boost_1_65_0\boost\serialization\serialization.hpp(68): note: see reference to function template instantiation 'void boost::serialization::access::serialize<Archive,T>(Archive &,T &,const unsigned int)' being compiled
+          with
+          [
+              Archive=boost::archive::xml_oarchive,
+              T=int
+          ]
+  c:\program files\boost_1_65_0\boost\serialization\serialization.hpp(126): note: see reference to function template instantiation 'void boost::serialization::serialize<Archive,T>(Archive &,T &,const unsigned int)' being compiled
+          with
+          [
+              Archive=boost::archive::xml_oarchive,
+              T=int
+          ]
+  c:\program files\boost_1_65_0\boost\archive\detail\oserializer.hpp(154): note: see reference to function template instantiation 'void boost::serialization::serialize_adl<Archive,T>(Archive &,T &,const unsigned int)' being compiled
+          with
+          [
+              Archive=boost::archive::xml_oarchive,
+              T=int
+          ]
+  c:\program files\boost_1_65_0\boost\archive\detail\oserializer.hpp(146): note: while compiling class template member function 'void boost::archive::detail::oserializer<Archive,T>::save_object_data(boost::archive::detail::basic_oarchive &,const void *) const'
+          with
+          [
+              Archive=boost::archive::xml_oarchive,
+              T=int
+          ]
+  c:\program files\boost_1_65_0\boost\archive\detail\oserializer.hpp(171): note: see reference to class template instantiation 'boost::archive::detail::oserializer<Archive,T>' being compiled
+          with
+          [
+              Archive=boost::archive::xml_oarchive,
+              T=int
+          ]
+  c:\program files\boost_1_65_0\boost\archive\detail\oserializer.hpp(168): note: while compiling class template member function 'const boost::archive::detail::basic_oserializer &boost::archive::detail::pointer_oserializer<Archive,T>::get_basic_serializer(void) const'
+          with
+          [
+              Archive=boost::archive::xml_oarchive,
+              T=int
+          ]
+  c:\program files\boost_1_65_0\boost\archive\detail\oserializer.hpp(365): note: see reference to class template instantiation 'boost::archive::detail::pointer_oserializer<Archive,T>' being compiled
+          with
+          [
+              Archive=boost::archive::xml_oarchive,
+              T=int
+          ]
+  c:\program files\boost_1_65_0\boost\archive\detail\oserializer.hpp(462): note: see reference to function template instantiation 'void boost::archive::detail::save_pointer_type<Archive>::non_polymorphic::save<T>(Archive &,T &)' being compiled
+          with
+          [
+              Archive=boost::archive::xml_oarchive,
+              T=int
+          ]
+  c:\program files\boost_1_65_0\boost\archive\detail\oserializer.hpp(462): note: see reference to function template instantiation 'void boost::archive::detail::save_pointer_type<Archive>::non_polymorphic::save<T>(Archive &,T &)' being compiled
+          with
+          [
+              Archive=boost::archive::xml_oarchive,
+              T=int
+          ]
+  policeman.cpp
+  Unknown compiler version - please run the configure tests and report the results
+  Generating Code...
