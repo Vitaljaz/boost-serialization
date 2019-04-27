@@ -15,7 +15,7 @@ public:
 	double indexOfHealth() override;
 
 	int rang;
-	int *rangPtr;
+	// int *rangPtr;
 	bool onDuty;
 	std::string gun;
 
@@ -28,7 +28,7 @@ private:
 		ar &BOOST_SERIALIZATION_NVP(rang);
 		ar &BOOST_SERIALIZATION_NVP(onDuty);
 		ar &BOOST_SERIALIZATION_NVP(gun);
-		ar &BOOST_SERIALIZATION_NVP(rangPtr);
+		// ar &BOOST_SERIALIZATION_NVP(rangPtr);
 	}
 };
 
