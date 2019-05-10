@@ -2,6 +2,7 @@
 
 #include "person.h"
 #include "serialization.h"
+#include <boost/serialization/shared_ptr.hpp>
 
 
 class Policeman: public Person
@@ -15,9 +16,9 @@ public:
 	double indexOfHealth() override;
 
 	int rang;
-	// int *rangPtr;
 	bool onDuty;
 	std::string gun;
+	boost::shared_ptr<Person> obj;
 
 
 private:
@@ -28,7 +29,7 @@ private:
 		ar &BOOST_SERIALIZATION_NVP(rang);
 		ar &BOOST_SERIALIZATION_NVP(onDuty);
 		ar &BOOST_SERIALIZATION_NVP(gun);
-		// ar &BOOST_SERIALIZATION_NVP(rangPtr);
+		ar &BOOST_SERIALIZATION_NVP(obj);
 	}
 };
 

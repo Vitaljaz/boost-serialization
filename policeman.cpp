@@ -13,7 +13,6 @@ Policeman::Policeman(int rang, std::string gun, bool onDuty)
 	this->rang = rang;
 	this->gun = gun;
 	this->onDuty = onDuty;
-	// *rangPtr = this->rang;
 }
 
 double Policeman::indexOfHealth() {

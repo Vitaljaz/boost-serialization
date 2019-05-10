@@ -7,28 +7,78 @@
 #include "archive.h"
 #include "serialization.h"
 
-int main()
+#include <boost/serialization/scoped_ptr.hpp>
+#include <boost/scoped_ptr.hpp>
+
+void test_1() 
 {
-	Policeman *cop_Mike = new Policeman(10, "Deagle", true);
-	std::cout << "Serialization start." << std::endl;
+	std::cout << "=============== TEST 1 ===============" << std::endl;
+	Policeman *john = new Policeman(10, "Shootgun", false);
+	john->printInfo();
 	std::ofstream ofs("policeman.xml");
 	Serializer oa(ofs);
-	oa << BOOST_SERIALIZATION_NVP(cop_Mike);
+	oa << BOOST_SERIALIZATION_NVP(john);
 	ofs.close();
-	std::cout << "Serialization is end." << std::endl;
+	delete john;
 
-	Policeman *cop_John = new Policeman();
-	std::cout << "Deserialization start." << std::endl;
+	std::cout << "\nAfter serialization: " << std::endl;
+	Policeman *mike;
 	std::ifstream ifs("policeman.xml");
 	Deserializer ia(ifs);
-	ia >> BOOST_SERIALIZATION_NVP(cop_John);
+	ia >> BOOST_SERIALIZATION_NVP(mike);
 	ifs.close();
-	std::cout << "Deserialization is end." << std::endl;
+	mike->printInfo();
+	std::cout << "=============== TEST 1 ===============" << std::endl;
+	delete mike;
+}
 
-	cop_John->printInfo();
-	std::cout << "Index of health: " << cop_John->indexOfHealth() << std::endl;
+void test_2()
+{
+	std::cout << "\n=============== TEST 2 ===============" << std::endl;
+	boost::scoped_ptr<Policeman> john{ new Policeman{5, "m4", true} };
+	std::ofstream ofs("policeman.xml");
+	Serializer oa(ofs);
+	oa << BOOST_SERIALIZATION_NVP(john);
+	ofs.close();
+	john->printInfo();
+	std::cout << "\nAfter deseralization: " << std::endl;
 
-	delete cop_Mike;
-	delete cop_John;
+	boost::scoped_ptr<Policeman> mike;
+	std::ifstream ifs("policeman.xml");
+	Deserializer ia(ifs);
+	ia >> BOOST_SERIALIZATION_NVP(mike);
+	ifs.close();
+	mike->printInfo();
+	std::cout << "=============== TEST 2 ===============" << std::endl;
+}
+
+void test_3() 
+{
+	std::cout << "\n=============== TEST 3 ===============" << std::endl;
+	Policeman alex{ 10, "sniper", true };
+	Policeman &andrew = alex;
+	alex.printInfo();
+	std::ofstream ofs("policeman.xml");
+	Serializer oa(ofs);
+	oa << BOOST_SERIALIZATION_NVP(andrew);
+	ofs.close();
+	std::cout << "\nAfter serialization: " << std::endl;
+
+	Policeman kendrick;
+	Policeman &jacob = kendrick;
+	std::ifstream ifs("policeman.xml");
+	Deserializer ia(ifs);
+	ia >> BOOST_SERIALIZATION_NVP(kendrick);
+	ifs.close();
+	kendrick.printInfo();
+	std::cout << "=============== TEST 3 ===============" << std::endl;
+
+}
+
+int main()
+{
+	test_1();
+	test_2();
+	test_3();
 	return 0;
 }
