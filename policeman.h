@@ -5,11 +5,11 @@
 #include <boost/serialization/shared_ptr.hpp>
 
 
-class Policeman: public Person
+class Policeman: public virtual Person
 {
 public:
-	Policeman(int rang, std::string gun, bool onDuty);
 	Policeman();
+	Policeman(int rang, std::string gun, bool onDuty);
 	~Policeman();
 
 	void printInfo();
@@ -18,7 +18,10 @@ public:
 	int rang;
 	bool onDuty;
 	std::string gun;
+	int address = (int) this;
+	int *ptr = &rang;
 	boost::shared_ptr<Person> obj;
+	std::vector<int> favoriteNumbers;
 
 
 private:
@@ -27,9 +30,11 @@ private:
 	void serialize(Archive &ar, const unsigned int version) {
 		ar &BOOST_SERIALIZATION_BASE_OBJECT_NVP(Person);
 		ar &BOOST_SERIALIZATION_NVP(rang);
+		ar &BOOST_SERIALIZATION_NVP(favoriteNumbers);
 		ar &BOOST_SERIALIZATION_NVP(onDuty);
 		ar &BOOST_SERIALIZATION_NVP(gun);
 		ar &BOOST_SERIALIZATION_NVP(obj);
+		ar &BOOST_SERIALIZATION_NVP(address);
 	}
 };
 

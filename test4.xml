@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<!DOCTYPE boost_serialization>
+<boost_serialization signature="serialization::archive" version="15">
+<edward class_id="0" tracking_level="1" version="0" object_id="_0">
+	<Policeman class_id="1" tracking_level="1" version="0" object_id="_1">
+		<Person class_id="2" tracking_level="0" version="0">
+			<name>Edward</name>
+			<age>34</age>
+			<weight>7.50000000000000000e+01</weight>
+			<height>1.85000000000000000e+02</height>
+			<favoriteNumbers>
+				<count>0</count>
+				<item_version>0</item_version>
+			</favoriteNumbers>
+		</Person>
+		<rang>10</rang>
+		<favoriteNumbers>
+			<count>0</count>
+			<item_version>0</item_version>
+		</favoriteNumbers>
+		<onDuty>1</onDuty>
+		<gun>Glock</gun>
+		<obj class_id="4" tracking_level="0" version="1">
+			<px class_id="-1"></px>
+		</obj>
+		<address>17066248</address>
+	</Policeman>
+	<Sportsman class_id="5" tracking_level="0" version="0">
+		<Person>
+			<name>Edward</name>
+			<age>34</age>
+			<weight>7.50000000000000000e+01</weight>
+			<height>1.85000000000000000e+02</height>
+			<favoriteNumbers>
+				<count>0</count>
+				<item_version>0</item_version>
+			</favoriteNumbers>
+		</Person>
+		<body_type>Strong</body_type>
+		<favoriteNumbers>
+			<count>0</count>
+			<item_version>0</item_version>
+		</favoriteNumbers>
+		<max_weight>100</max_weight>
+		<favoriteNumbers>
+			<count>0</count>
+			<item_version>0</item_version>
+		</favoriteNumbers>
+	</Sportsman>
+	<favoriteNumbers>
+		<count>4</count>
+		<item_version>0</item_version>
+		<item>1</item>
+		<item>2</item>
+		<item>5</item>
+		<item>7</item>
+	</favoriteNumbers>
+	<number_of_investigate>5</number_of_investigate>
+	<salary>40000</salary>
+</edward>
