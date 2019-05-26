@@ -11,6 +11,11 @@
 			<count>0</count>
 			<item_version>0</item_version>
 		</favoriteNumbers>
+		<helper class_id="3" tracking_level="1" version="0" object_id="_1"></helper>
+		<helper_ptr class_id_reference="3" object_id_reference="_1"></helper_ptr>
+		<helper_rf object_id="_2"></helper_rf>
+		<helper_rf2 object_id_reference="_1"></helper_rf2>
+		<h_parent_ptr class_id="4" tracking_level="1" version="0" object_id="_3"></h_parent_ptr>
 	</Person>
 	<rang>10</rang>
 	<favoriteNumbers>
@@ -21,8 +26,8 @@
 	</favoriteNumbers>
 	<onDuty>1</onDuty>
 	<gun>sniper</gun>
-	<obj class_id="3" tracking_level="0" version="1">
+	<obj class_id="5" tracking_level="0" version="1">
 		<px class_id="-1"></px>
 	</obj>
-	<address>13630672</address>
+	<address>9303532</address>
 </andrew>

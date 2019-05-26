@@ -1,7 +1,7 @@
 #pragma once
 
 #include "serialization.h"
-
+#include "class_helper.h"
 
 class Person
 {
@@ -15,6 +15,15 @@ public:
 	virtual void printInfo() = 0;
 	virtual double indexOfHealth() = 0;
 
+	Helper helper;
+	Helper *helper2 = new Helper();
+	Helper *helper_ptr = &helper;
+	Helper &helper_rf = *helper2;
+	Helper &helper_rf2 = helper;
+
+	HelperWithParent h_parent;
+	HelperWithParent *h_parent_ptr = &h_parent;
+
 	Person();
 	~Person();
 
@@ -27,6 +36,11 @@ private:
 		ar &BOOST_SERIALIZATION_NVP(weight);
 		ar &BOOST_SERIALIZATION_NVP(height);
 		ar &BOOST_SERIALIZATION_NVP(favoriteNumbers);
+		ar &BOOST_SERIALIZATION_NVP(helper);
+		ar &BOOST_SERIALIZATION_NVP(helper_ptr);
+		ar &BOOST_SERIALIZATION_NVP(helper_rf);
+		ar &BOOST_SERIALIZATION_NVP(helper_rf2);
+		ar &BOOST_SERIALIZATION_NVP(h_parent_ptr);
 	}
 };
 

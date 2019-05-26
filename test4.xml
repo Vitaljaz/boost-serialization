@@ -12,6 +12,11 @@
 				<count>0</count>
 				<item_version>0</item_version>
 			</favoriteNumbers>
+			<helper class_id="4" tracking_level="1" version="0" object_id="_2"></helper>
+			<helper_ptr class_id_reference="4" object_id_reference="_2"></helper_ptr>
+			<helper_rf object_id="_3"></helper_rf>
+			<helper_rf2 object_id_reference="_2"></helper_rf2>
+			<h_parent_ptr class_id="5" tracking_level="1" version="0" object_id="_4"></h_parent_ptr>
 		</Person>
 		<rang>10</rang>
 		<favoriteNumbers>
@@ -20,12 +25,12 @@
 		</favoriteNumbers>
 		<onDuty>1</onDuty>
 		<gun>Glock</gun>
-		<obj class_id="4" tracking_level="0" version="1">
+		<obj class_id="6" tracking_level="0" version="1">
 			<px class_id="-1"></px>
 		</obj>
-		<address>17066248</address>
+		<address>1246752</address>
 	</Policeman>
-	<Sportsman class_id="5" tracking_level="0" version="0">
+	<Sportsman class_id="7" tracking_level="0" version="0">
 		<Person>
 			<name>Edward</name>
 			<age>34</age>
@@ -35,6 +40,11 @@
 				<count>0</count>
 				<item_version>0</item_version>
 			</favoriteNumbers>
+			<helper object_id_reference="_2"></helper>
+			<helper_ptr class_id_reference="4" object_id_reference="_2"></helper_ptr>
+			<helper_rf object_id_reference="_3"></helper_rf>
+			<helper_rf2 object_id_reference="_2"></helper_rf2>
+			<h_parent_ptr class_id_reference="5" object_id_reference="_4"></h_parent_ptr>
 		</Person>
 		<body_type>Strong</body_type>
 		<favoriteNumbers>
@@ -57,4 +67,8 @@
 	</favoriteNumbers>
 	<number_of_investigate>5</number_of_investigate>
 	<salary>40000</salary>
+	<helper object_id="_5"></helper>
+	<helper_ptr class_id_reference="4" object_id_reference="_5"></helper_ptr>
+	<helper_rf object_id="_6"></helper_rf>
+	<helper_rf2 object_id_reference="_5"></helper_rf2>
 </edward>

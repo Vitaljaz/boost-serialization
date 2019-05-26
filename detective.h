@@ -4,6 +4,8 @@
 #include "serialization.h"
 #include <boost/serialization/shared_ptr.hpp>
 
+#include "class_helper.h"
+
 class Detective: public Policeman, public Sportsman
 {
 public:
@@ -15,6 +17,12 @@ public:
 
 
 	~Detective();
+
+	Helper helper;
+	Helper *helper2 = new Helper();
+	Helper *helper_ptr = &helper;
+	Helper &helper_rf = *helper2;
+	Helper &helper_rf2 = helper;
 
 	int number_of_investigate;
 	int salary;
@@ -31,6 +39,10 @@ private:
 		ar &BOOST_SERIALIZATION_NVP(favoriteNumbers);
 		ar &BOOST_SERIALIZATION_NVP(number_of_investigate);
 		ar &BOOST_SERIALIZATION_NVP(salary);
+		ar &BOOST_SERIALIZATION_NVP(helper);
+		ar &BOOST_SERIALIZATION_NVP(helper_ptr);
+		ar &BOOST_SERIALIZATION_NVP(helper_rf);
+		ar &BOOST_SERIALIZATION_NVP(helper_rf2);
 	}
 };
 

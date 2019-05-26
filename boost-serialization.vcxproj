@@ -154,15 +154,20 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="boost-serialization.cpp" />
+    <ClCompile Include="detective.cpp" />
     <ClCompile Include="Person.cpp" />
     <ClCompile Include="policeman.cpp" />
+    <ClCompile Include="sportsman.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="archive.h" />
+    <ClInclude Include="class_helper.h" />
     <ClInclude Include="class_master.h" />
+    <ClInclude Include="detective.h" />
     <ClInclude Include="person.h" />
     <ClInclude Include="policeman.h" />
     <ClInclude Include="serialization.h" />
+    <ClInclude Include="sportsman.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

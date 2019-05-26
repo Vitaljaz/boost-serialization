@@ -31,6 +31,7 @@ Detective::Detective(std::string name, int age, int height, int weight, int rang
 
 Detective::~Detective()
 {
+	delete helper2;
 }
 
 void Detective::printInfo()

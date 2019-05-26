@@ -9,4 +9,5 @@ Person::Person()
 
 Person::~Person()
 {
+	delete helper2;
 }

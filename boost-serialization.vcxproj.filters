@@ -20,6 +20,12 @@
     <ClCompile Include="policeman.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="detective.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="sportsman.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="serialization.h">
@@ -35,6 +41,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="class_master.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="detective.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="sportsman.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="class_helper.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
