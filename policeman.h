@@ -19,7 +19,6 @@ public:
 	bool onDuty;
 	std::string gun;
 	int address = (int) this;
-	int *ptr = &rang;
 	boost::shared_ptr<Person> obj;
 	std::vector<int> favoriteNumbers;
 

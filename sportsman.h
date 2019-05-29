@@ -10,7 +10,6 @@ public:
 	Sportsman(int max_weight, std::string body_type, std::string favorite_sport);
 	~Sportsman();
 
-
 	std::string body_type;
 	std::string favorite_sport;
 	int max_weight;

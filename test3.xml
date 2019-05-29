@@ -13,9 +13,8 @@
 		</favoriteNumbers>
 		<helper class_id="3" tracking_level="1" version="0" object_id="_1"></helper>
 		<helper_ptr class_id_reference="3" object_id_reference="_1"></helper_ptr>
-		<helper_rf object_id="_2"></helper_rf>
-		<helper_rf2 object_id_reference="_1"></helper_rf2>
-		<h_parent_ptr class_id="4" tracking_level="1" version="0" object_id="_3"></h_parent_ptr>
+		<helper_rf object_id_reference="_1"></helper_rf>
+		<h_parent_ptr class_id="4" tracking_level="1" version="0" object_id="_2"></h_parent_ptr>
 	</Person>
 	<rang>10</rang>
 	<favoriteNumbers>
@@ -29,5 +28,5 @@
 	<obj class_id="5" tracking_level="0" version="1">
 		<px class_id="-1"></px>
 	</obj>
-	<address>9303532</address>
+	<address>5241152</address>
 </andrew>

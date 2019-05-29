@@ -19,10 +19,8 @@ public:
 	~Detective();
 
 	Helper helper;
-	Helper *helper2 = new Helper();
 	Helper *helper_ptr = &helper;
-	Helper &helper_rf = *helper2;
-	Helper &helper_rf2 = helper;
+	Helper &helper_rf = helper;
 
 	int number_of_investigate;
 	int salary;
@@ -42,7 +40,6 @@ private:
 		ar &BOOST_SERIALIZATION_NVP(helper);
 		ar &BOOST_SERIALIZATION_NVP(helper_ptr);
 		ar &BOOST_SERIALIZATION_NVP(helper_rf);
-		ar &BOOST_SERIALIZATION_NVP(helper_rf2);
 	}
 };
 
